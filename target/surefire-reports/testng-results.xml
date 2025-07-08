@@ -1,45 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-08T17:39:23 IST" name="Suite" finished-at="2025-07-08T17:39:32 IST" duration-ms="9234">
+  <suite started-at="2025-07-09T00:23:55 IST" name="DockerGridTestSuite" finished-at="2025-07-09T00:24:22 IST" duration-ms="27571">
     <groups>
     </groups>
-    <test started-at="2025-07-08T17:39:23 IST" name="HomePageTest" finished-at="2025-07-08T17:39:27 IST" duration-ms="4380">
-      <class name="com.CRM.TestCase.HomePageTestCase">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.CRM.TestCase.HomePageTestCase@61862a7f]" started-at="2025-07-08T17:39:23 IST" name="setup" finished-at="2025-07-08T17:39:26 IST" duration-ms="3207" status="PASS">
+    <test started-at="2025-07-09T00:23:55 IST" name="ChromeTest" finished-at="2025-07-09T00:24:00 IST" duration-ms="5613">
+      <class name="com.DevopsAssignment.AmazonTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.DevopsAssignment.AmazonTest@15c43bd9]" started-at="2025-07-09T00:23:55 IST" name="setup" finished-at="2025-07-09T00:23:56 IST" duration-ms="1332" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUrl()[pri:1, instance:com.CRM.TestCase.HomePageTestCase@61862a7f]" started-at="2025-07-08T17:39:26 IST" name="verifyUrl" finished-at="2025-07-08T17:39:26 IST" duration-ms="17" status="PASS">
+        <test-method signature="testAmazonFooterLinks()[pri:0, instance:com.DevopsAssignment.AmazonTest@15c43bd9]" started-at="2025-07-09T00:23:56 IST" name="testAmazonFooterLinks" finished-at="2025-07-09T00:24:00 IST" duration-ms="4141" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUrl -->
-        <test-method signature="verifyTitle()[pri:2, instance:com.CRM.TestCase.HomePageTestCase@61862a7f]" started-at="2025-07-08T17:39:26 IST" name="verifyTitle" finished-at="2025-07-08T17:39:26 IST" duration-ms="15" status="PASS">
+        </test-method> <!-- testAmazonFooterLinks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.DevopsAssignment.AmazonTest@15c43bd9]" started-at="2025-07-09T00:24:00 IST" name="tearDown" finished-at="2025-07-09T00:24:00 IST" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method signature="validateSIgnInLink()[pri:3, instance:com.CRM.TestCase.HomePageTestCase@61862a7f]" started-at="2025-07-08T17:39:26 IST" name="validateSIgnInLink" finished-at="2025-07-08T17:39:27 IST" duration-ms="1083" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateSIgnInLink -->
-      </class> <!-- com.CRM.TestCase.HomePageTestCase -->
-    </test> <!-- HomePageTest -->
-    <test started-at="2025-07-08T17:39:27 IST" name="LoginPageTest" finished-at="2025-07-08T17:39:32 IST" duration-ms="4790">
-      <class name="com.CRM.TestCase.LoginPageTestCase">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.CRM.TestCase.LoginPageTestCase@564fabc8]" started-at="2025-07-08T17:39:27 IST" name="setup" finished-at="2025-07-08T17:39:30 IST" duration-ms="2436" status="PASS">
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.DevopsAssignment.AmazonTest -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2025-07-09T00:23:55 IST" name="FirefoxTest" finished-at="2025-07-09T00:24:02 IST" duration-ms="7489">
+      <class name="com.DevopsAssignment.AmazonTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.DevopsAssignment.AmazonTest@dd8ba08]" started-at="2025-07-09T00:23:55 IST" name="setup" finished-at="2025-07-09T00:23:58 IST" duration-ms="3226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="pageSetup()[pri:0, instance:com.CRM.TestCase.LoginPageTestCase@564fabc8]" started-at="2025-07-08T17:39:30 IST" name="pageSetup" finished-at="2025-07-08T17:39:31 IST" duration-ms="1410" status="PASS">
+        <test-method signature="testAmazonFooterLinks()[pri:0, instance:com.DevopsAssignment.AmazonTest@dd8ba08]" started-at="2025-07-09T00:23:58 IST" name="testAmazonFooterLinks" finished-at="2025-07-09T00:24:01 IST" duration-ms="3527" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pageSetup -->
-        <test-method signature="validateLogin()[pri:0, instance:com.CRM.TestCase.LoginPageTestCase@564fabc8]" started-at="2025-07-08T17:39:31 IST" name="validateLogin" finished-at="2025-07-08T17:39:32 IST" duration-ms="935" status="PASS">
+        </test-method> <!-- testAmazonFooterLinks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.DevopsAssignment.AmazonTest@dd8ba08]" started-at="2025-07-09T00:24:01 IST" name="tearDown" finished-at="2025-07-09T00:24:02 IST" duration-ms="703" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateLogin -->
-      </class> <!-- com.CRM.TestCase.LoginPageTestCase -->
-    </test> <!-- LoginPageTest -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.DevopsAssignment.AmazonTest -->
+    </test> <!-- FirefoxTest -->
+    <test started-at="2025-07-09T00:23:55 IST" name="EdgeTest" finished-at="2025-07-09T00:24:22 IST" duration-ms="27571">
+      <class name="com.DevopsAssignment.AmazonTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.DevopsAssignment.AmazonTest@6c64cb25]" started-at="2025-07-09T00:23:55 IST" name="setup" finished-at="2025-07-09T00:23:56 IST" duration-ms="1658" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAmazonFooterLinks()[pri:0, instance:com.DevopsAssignment.AmazonTest@6c64cb25]" started-at="2025-07-09T00:23:56 IST" name="testAmazonFooterLinks" finished-at="2025-07-09T00:24:21 IST" duration-ms="24784" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: MicrosoftEdge=125.0.2535.51)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [b69c1fdacccd4996064629e89085367f, get {url=https://www.amazon.in/}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:34641}, msedge: {msedgedriverVersion: 125.0.2535.51 (b1bc6e892654..., userDataDir: /tmp/.com.microsoft.Edge.yG...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.3:4444/sessio..., se:cdpVersion: 125.0.2535.51, se:vnc: ws://172.18.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b69c1fdacccd4996064629e89085367f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: MicrosoftEdge=125.0.2535.51)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [b69c1fdacccd4996064629e89085367f, get {url=https://www.amazon.in/}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:34641}, msedge: {msedgedriverVersion: 125.0.2535.51 (b1bc6e892654..., userDataDir: /tmp/.com.microsoft.Edge.yG...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.3:4444/sessio..., se:cdpVersion: 125.0.2535.51, se:vnc: ws://172.18.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b69c1fdacccd4996064629e89085367f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+at com.DevopsAssignment.AmazonTest.testAmazonFooterLinks(AmazonTest.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonFooterLinks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.DevopsAssignment.AmazonTest@6c64cb25]" started-at="2025-07-09T00:24:21 IST" name="tearDown" finished-at="2025-07-09T00:24:22 IST" duration-ms="1096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.DevopsAssignment.AmazonTest -->
+    </test> <!-- EdgeTest -->
+  </suite> <!-- DockerGridTestSuite -->
 </testng-results>

@@ -2,52 +2,64 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-08T21:15:27 IST" name="DockerGridTestSuite" finished-at="2025-07-08T21:15:35 IST" duration-ms="8864">
+  <suite started-at="2025-07-09T00:32:29 IST" name="DockerGridTestSuite" finished-at="2025-07-09T00:32:44 IST" duration-ms="15372">
     <groups>
     </groups>
-    <test started-at="2025-07-08T21:15:27 IST" name="ChromeTest" finished-at="2025-07-08T21:15:34 IST" duration-ms="7055">
+    <test started-at="2025-07-09T00:32:29 IST" name="ChromeTest" finished-at="2025-07-09T00:32:42 IST" duration-ms="13491">
       <class name="com.DevopsAssignment.AmazonTest">
-        <test-method signature="crossBrowserTesting(java.lang.String)[pri:0, instance:com.DevopsAssignment.AmazonTest@4b2bac3f]" started-at="2025-07-08T21:15:27 IST" name="crossBrowserTesting" finished-at="2025-07-08T21:15:34 IST" duration-ms="7015" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.DevopsAssignment.AmazonTest@515c6049]" started-at="2025-07-09T00:32:29 IST" name="setup" finished-at="2025-07-09T00:32:30 IST" duration-ms="839" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- crossBrowserTesting -->
+        </test-method> <!-- setup -->
+        <test-method signature="testAmazonFooterLinks()[pri:0, instance:com.DevopsAssignment.AmazonTest@515c6049]" started-at="2025-07-09T00:32:30 IST" name="testAmazonFooterLinks" finished-at="2025-07-09T00:32:42 IST" duration-ms="12599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonFooterLinks -->
       </class> <!-- com.DevopsAssignment.AmazonTest -->
     </test> <!-- ChromeTest -->
-    <test started-at="2025-07-08T21:15:27 IST" name="EdgeTest" finished-at="2025-07-08T21:15:34 IST" duration-ms="7500">
+    <test started-at="2025-07-09T00:32:29 IST" name="EdgeTest" finished-at="2025-07-09T00:32:43 IST" duration-ms="14523">
       <class name="com.DevopsAssignment.AmazonTest">
-        <test-method signature="crossBrowserTesting(java.lang.String)[pri:0, instance:com.DevopsAssignment.AmazonTest@bcec361]" started-at="2025-07-08T21:15:27 IST" name="crossBrowserTesting" finished-at="2025-07-08T21:15:34 IST" duration-ms="7467" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.DevopsAssignment.AmazonTest@4c178a76]" started-at="2025-07-09T00:32:29 IST" name="setup" finished-at="2025-07-09T00:32:30 IST" duration-ms="907" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Edge]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- crossBrowserTesting -->
+        </test-method> <!-- setup -->
+        <test-method signature="testAmazonFooterLinks()[pri:0, instance:com.DevopsAssignment.AmazonTest@4c178a76]" started-at="2025-07-09T00:32:30 IST" name="testAmazonFooterLinks" finished-at="2025-07-09T00:32:43 IST" duration-ms="13571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonFooterLinks -->
       </class> <!-- com.DevopsAssignment.AmazonTest -->
     </test> <!-- EdgeTest -->
-    <test started-at="2025-07-08T21:15:27 IST" name="FirefoxTest" finished-at="2025-07-08T21:15:35 IST" duration-ms="8864">
+    <test started-at="2025-07-09T00:32:29 IST" name="FirefoxTest" finished-at="2025-07-09T00:32:44 IST" duration-ms="15372">
       <class name="com.DevopsAssignment.AmazonTest">
-        <test-method signature="crossBrowserTesting(java.lang.String)[pri:0, instance:com.DevopsAssignment.AmazonTest@14cd1699]" started-at="2025-07-08T21:15:27 IST" name="crossBrowserTesting" finished-at="2025-07-08T21:15:35 IST" duration-ms="8831" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.DevopsAssignment.AmazonTest@2362f559]" started-at="2025-07-09T00:32:29 IST" name="setup" finished-at="2025-07-09T00:32:32 IST" duration-ms="3221" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- crossBrowserTesting -->
+        </test-method> <!-- setup -->
+        <test-method signature="testAmazonFooterLinks()[pri:0, instance:com.DevopsAssignment.AmazonTest@2362f559]" started-at="2025-07-09T00:32:32 IST" name="testAmazonFooterLinks" finished-at="2025-07-09T00:32:44 IST" duration-ms="12107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonFooterLinks -->
       </class> <!-- com.DevopsAssignment.AmazonTest -->
     </test> <!-- FirefoxTest -->
   </suite> <!-- DockerGridTestSuite -->
