@@ -1,66 +1,49 @@
 package com.DevopsAssignment;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 
 import java.net.URL;
 
 public class BaseTest {
+	public WebDriver driver;
 
-	protected WebDriver driver;
-
-	@SuppressWarnings("deprecation")
-	@Parameters("browser")
 	@BeforeMethod
-	public void setup(String browser) {
-		try {
-			DesiredCapabilities capabilities = new DesiredCapabilities();
+	@Parameters("bname")
+	public void setup(String bname) throws Exception {
+		System.out.println("Starting setup for browser: " + bname);
+		URL gridUrl = new URL("http://localhost:4444/wd/hub");
 
-			switch (browser.toLowerCase()) {
-			case "chrome":
-				ChromeOptions chromeOptions = new ChromeOptions();
-				chromeOptions.addArguments("--headless=new", "--no-sandbox", "--disable-dev-shm-usage");
-				capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-				capabilities.setBrowserName("chrome");
-				break;
-			case "firefox":
-				FirefoxOptions firefoxOptions = new FirefoxOptions();
-				firefoxOptions.addArguments("--headless");
-				capabilities.setCapability(FirefoxOptions.FIREFOX_OPTIONS, firefoxOptions);
-				capabilities.setBrowserName("firefox");
-				break;
-			case "edge":
-				EdgeOptions edgeOptions = new EdgeOptions();
-				edgeOptions.addArguments("--headless=new");
-				capabilities.setCapability(EdgeOptions.CAPABILITY, edgeOptions);
-				capabilities.setBrowserName("MicrosoftEdge");
-				break;
-			default:
-				throw new Exception("❌ Unsupported browser: " + browser);
-			}
+		if (bname.equalsIgnoreCase("chrome")) {
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-gpu");
+			options.addArguments("--disable-extensions");
+			options.addArguments("--disable-notifications");
+			driver = new RemoteWebDriver(gridUrl, options);
 
-			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
-			System.out.println("✅ " + browser + " browser launched successfully on Grid.");
+		} else if (bname.equalsIgnoreCase("firefox")) {
+			FirefoxOptions options = new FirefoxOptions();
+			driver = new RemoteWebDriver(gridUrl, options);
 
-		} catch (Exception e) {
-			System.out.println("❌ Error while initializing WebDriver: " + e.getMessage());
-			e.printStackTrace();
-			assert false : "WebDriver setup failed.";
+		} else if (bname.equalsIgnoreCase("edge")) {
+			EdgeOptions options = new EdgeOptions();
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-gpu");
+			driver = new RemoteWebDriver(gridUrl, options);
+		} else {
+			throw new IllegalArgumentException("Browser not supported: " + bname);
 		}
-	}
 
-	@AfterMethod
-	public void teardown() {
-		if (driver != null) {
-			System.out.println("Closing browser...");
-			driver.quit();
-		}
+		driver.manage().window().setSize(new Dimension(1366, 768));
+		System.out.println("✅ Browser launched: " + bname);
 	}
 }
