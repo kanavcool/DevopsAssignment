@@ -5,9 +5,7 @@
     <classes>
       <class name="com.DevopsAssignment.AmazonTest">
         <methods>
-          <include name="printAmazonFooterLinks"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="crossBrowserTesting"/>
         </methods>
       </class> <!-- com.DevopsAssignment.AmazonTest -->
     </classes>

@@ -1,0 +1,9 @@
+com\CRM\Pages\HomePage.class
+com\DevopsAssignment\BaseTest.class
+com\CRM\Pages\LoginPage.class
+com\CRM\TestCase\AsserttionTest.class
+com\DevopsAssignment\AmazonTest.class
+com\CRM\TestCase\HomePageTestCase.class
+com\CRM\Utility\Utility.class
+com\CRM\TestCase\BaseClass.class
+com\CRM\TestCase\LoginPageTestCase.class
